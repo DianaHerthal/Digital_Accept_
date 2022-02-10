@@ -7,8 +7,8 @@
             Title = title;
             Description = description;
             DateHourCriation = DateTime.Now;
-            var event = new Event($"Document {title} created", EventType.Created);
-            _events.Add(event);
+            var event_ = new Event($"Document {title} created", EventType.Created);
+            _events.Add(event_);
         }
 
         private Document()
@@ -22,15 +22,15 @@
 
         public DateTime DateHourCriation { get; private set; }
 
-        public IReadOnlyCollection<Event> Eventos => _events.AsReadOnly();
+        public IReadOnlyCollection<Event> Events => _events.AsReadOnly();
         private readonly List<Event> _events = new();
 
-        public IReadOnlyCollection<SignataryDocument> DocumentosSignatarios =>
+        public IReadOnlyCollection<SignataryDocument> SignatariesDocuments =>
             _signatariesDocuments.AsReadOnly();
         private readonly List<SignataryDocument> _signatariesDocuments = new();
 
 
-        public void AdicionarSignatario(Signatary signatary, SignataryType signataryType)
+        public void AddSignatary(Signatary signatary, SignataryType signataryType)
         {
             var signataryDocument = new SignataryDocument(signatary, signataryType);
 

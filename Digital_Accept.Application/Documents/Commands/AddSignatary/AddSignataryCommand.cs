@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Digital_Accept.Application.Documents.Commands.AddSignatary
 {
-    internal class AddSignataryCommand : IRequest
+    public class AddSignataryCommand : IRequest
     {
         public long DocumentId { get; set; }
 

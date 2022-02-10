@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Digital_Accept.Application\Digital_Accept.Application.csproj" />
     <ProjectReference Include="..\Digital_Accept.Domain\Digital_Accept.Domain.csproj" />
   </ItemGroup>

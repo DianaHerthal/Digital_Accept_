@@ -1,4 +1,5 @@
-﻿using Digital_Accept.Domain.Interfaces.Infraestructure;
+﻿using Digital_Accept.Data.Context;
+using Digital_Accept.Domain.Interfaces.Infraestructure;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
